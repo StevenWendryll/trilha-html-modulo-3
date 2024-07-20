@@ -1,38 +1,97 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-ul { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
-.bar {
-    background-color: #f9f9fb;
-    padding:15px;
-    border-top: solid 1px #cdcdcd;
-    border-bottom: solid 1px #cdcdcd;
+
+ul {
+    list-style: none;
+    padding-left: 5px;
 }
+
+a {
+    color: #0716e2;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(255, 153, 0);
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
 .content {
     max-width: 1440px;
-    margin: auto;
-    grid-gap: 3rem;
-    display: grid;
-    gap: 3rem;
-    grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
-    padding-left: 1rem;
+    margin: auto; 
+    grid-gap: 3rem; 
+    display: grid; 
+    gap: 3rem; 
+    grid-template-areas: "sidebar main anchors"; 
+    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem); 
+    padding-left: 1rem; 
     padding-right: 1rem;
 }
+
 .footer {
-    min-height: 100px;
-    border-top: solid 1px #cdcdcd;
+    min-height: 100px; /* Altura mínima do rodapé */
+    border-top: solid 1px #ffb300; /* Borda superior */
+    text-align: center; /* Alinhamento do texto */
 }
+
 .anchors {
-    border-left: solid 1px #cdcdcd;
-    padding-left: 15px;
+    border-left: solid 1px #ffb300;
+    padding-left: 16px;
 }
-.sidebar {
-    border-right: solid 1px #cdcdcd;
+
+.sidebar { 
+    border-right: solid 1px #ffb300;
 }
-figure {
+.video { 
     text-align: center;
+}
+
+/* Barra de navegação */
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    background-color: #000000;
+    padding: 10px 20px;
+}
+.navbar .nav-group { /* Grupo de links */
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem; /* Tamanho da fonte dos links */
+}
+.navbar .nav-group a { /* Estilo dos links */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.navbar .nav-group a:hover { /* Estilo dos links ao passar o mouse */
+    background-color: #272727;
+}
+.navbar .logo { /* Estilo da logo */
+    margin: 0 50px; /* Espaço ao redor da logo */
+}
+.navbar .logo img { /* Estilo da imagem da logo */
+    height: 100px; /* Ajuste conforme necessário */
+    border-radius: 50%;
 }
